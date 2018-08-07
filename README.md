@@ -5,9 +5,10 @@ The bcc tool available till date supports from kernel version 4.4 to 4.8 and giv
 
 17:39:52 Triggered by PID 10505 ("a.out"), OOM kill of PID 1835561760 ("lukB high:%lukB "), 2361183241434822607 pages, loadavg: 1.88 1.70 1.24 3/479 10508.
 
-But the kernel function oom_kill_process has been changed after 4.8 and hence modified bcc/oom_kill.py tool to trace out of memory for kernel versions till date!
+As the kernel function oom_kill_process has been changed after kernel version 4.8 the bcc tool needs to be modified accordingly which has been achieved through these few changes!
 
-Output after modifications for process a.out which consumed memory infinitely and got killed
+Output after modification has been given below! 
 
 23:38:03 Triggered by PID 22426 ("a.out"), OOM kill of PID 22426 ("a.out"), 4085393 pages, loadavg: 6.01 5.09 4.22 1/715 23199
 
+It can be observed that a.out is the process which infinitely tried to consume memory and has been killed!
