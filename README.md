@@ -1,7 +1,5 @@
 # bcc_tool-oomkill
-An updated bcc oom_kill tool which successfully traces out of memory
-
-Updated bcc oom_kill tool to successfully trace out of memory for kernel versions > 4.8
+An updated bcc oom_kill tool which successfully traces out of memory for kernel versions > 4.8
 
 The bcc tool available till date supports from kernel version 4.4 to 4.8 and gives anamolous output as given below for OOM kill of PID and total_pages consumed 
 
