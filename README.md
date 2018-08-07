@@ -7,6 +7,9 @@ The bcc tool available till date supports from kernel version 4.4 to 4.8 and giv
 
 As the kernel function oom_kill_process has been changed after kernel version 4.8 the bcc tool needs to be modified accordingly which has been achieved through these few changes!
 
+Additional details
+https://github.com/iovisor/bcc/issues/1911
+
 Output after modification has been given below! 
 
 23:38:03 Triggered by PID 22426 ("a.out"), OOM kill of PID 22426 ("a.out"), 4085393 pages, loadavg: 6.01 5.09 4.22 1/715 23199
